@@ -62,10 +62,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "homepage": "https://github.com/<账号>/dsh-whale-gallery",
+  "homepage": "https://github.com/gokyokugenn/dsh-whale-gallery#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/<账号>/dsh-whale-gallery.git"
+    "url": "https://github.com/gokyokugenn/dsh-whale-gallery.git"
   },
   "keywords": [
     "dsh",
@@ -73,5 +73,9 @@
     "theme",
     "skin",
     "deepseek-harness"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/gokyokugenn/dsh-whale-gallery/issues"
+  },
+  "author": "gokyokugenn"
 }
