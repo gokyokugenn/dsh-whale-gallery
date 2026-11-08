@@ -36,7 +36,7 @@ dsh plugin --profile <你的 profile> add "/path/to/dsh-whale-gallery-0.1.0.tgz"
 DSH 的「插件 → 发现」读的是**索引源 URL**，不是中心仓库。把下面这个地址加进去就能在发现页看到本插件：
 
 ```
-https://raw.githubusercontent.com/<你的账号>/dsh-whale-gallery/main/market/index.json
+https://raw.githubusercontent.com/gokyokugenn/dsh-whale-gallery/main/market/index.json
 ```
 
 索引文件本身在 [`market/index.json`](market/index.json)，格式是 DSH `@deepseek-ai/dsh-plugin-market` 的索引 schema（`schemaVersion` / `title` / `entries[].versions[]`）。
