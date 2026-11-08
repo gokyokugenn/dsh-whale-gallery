@@ -1,0 +1,77 @@
+{
+  "name": "dsh-whale-gallery",
+  "version": "0.1.0",
+  "description": "鲸鱼娘主题馆：38 套可即时切换的 DeepSeek Harness 界面皮肤，附带自建主题的构建与自检脚本。",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "assets/icon.svg",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./skin.json": "./skin.json",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.5 <5",
+    "@deepseek-ai/dsh": ">=0.2.1-rc.2 <0.2.2-0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "pack:skin": "npm run build && npm pack"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "preview",
+    "locale",
+    "skin.json",
+    "build-info.json",
+    "cordis.patch.yml",
+    "LICENSE",
+    "LICENSE-ARTWORK",
+    "NOTICE",
+    "NOTICE-UPSTREAM.txt",
+    "README.txt",
+    "docs",
+    "README.md",
+    "market"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "jsdom": "^27.0.0",
+    "playwright": "^1.56.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "homepage": "https://github.com/<账号>/dsh-whale-gallery",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<账号>/dsh-whale-gallery.git"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "theme",
+    "skin",
+    "deepseek-harness"
+  ]
+}

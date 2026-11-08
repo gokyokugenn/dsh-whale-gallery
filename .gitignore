@@ -1,0 +1,11 @@
+node_modules/
+*.tgz
+*.bak
+*.bak-*
+art-sources/
+preview/*.tmp
+.DS_Store
+Thumbs.db
+.probe/
+_*
+!docs/**

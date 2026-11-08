@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "title": "鲸鱼娘主题馆",
+  "description": "DeepSeek Harness 的界面皮肤合集：38 套主题，可自建。",
+  "metadata": {
+    "categories": {
+      "themes": { "title": "主题 / 皮肤" }
+    },
+    "labels": {
+      "chinese": { "title": "中文" },
+      "anime": { "title": "二次元" }
+    },
+    "sortKeys": {}
+  },
+  "entries": [
+    {
+      "name": "dsh-whale-gallery",
+      "title": "鲸鱼娘主题馆",
+      "description": "38 套可即时切换的 DSH 界面皮肤：主题馆面板、六类分组、背景浓度与阅读底色两个滑块，深色/浅色都适配，支持自己加主题。",
+      "icon": "https://raw.githubusercontent.com/YOUR_NAME/dsh-whale-gallery/main/preview/default.png",
+      "author": "YOUR_NAME",
+      "homepage": "https://github.com/YOUR_NAME/dsh-whale-gallery",
+      "repository": {
+        "url": "https://github.com/YOUR_NAME/dsh-whale-gallery"
+      },
+      "metadata": {
+        "category": "themes",
+        "keywords": ["theme", "skin", "anime", "皮肤", "主题"],
+        "labels": ["chinese", "anime"],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1762646400,
+          "install": {
+            "spec": "https://github.com/YOUR_NAME/dsh-whale-gallery/releases/download/v0.1.0/dsh-whale-gallery-0.1.0.tgz"
+          },
+          "source": {
+            "type": "git",
+            "url": "https://github.com/YOUR_NAME/dsh-whale-gallery",
+            "commit": "0000000000000000000000000000000000000000"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.2 <0.2.2-0"
+          }
+        }
+      ],
+      "defaultVersion": "0.1.0"
+    }
+  ]
+}

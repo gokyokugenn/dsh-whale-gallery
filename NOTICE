@@ -1,0 +1,27 @@
+Whale Girl Gallery / 鲸鱼娘主题馆
+================================
+
+Software reference:
+Small-tailqwq/dsh-deep-whale, commit d9bb4989c941d4d1d5cee1fa8388f2d14f0a771b.
+The local immutable artwork route and activation/disposal design were adapted
+from this project's presentation-only skin structure. Its MIT notice is retained
+in LICENSE. This package is an independent local derivative, not an official
+DeepSeek or Small-tailqwq release.
+
+Artwork and character attribution chain (CC BY-NC-SA 4.0):
+1. 上善 — original whale-girl character design.
+   https://www.pixiv.net/users/62155430
+2. ZipZipPipe — maid whale-girl redesign incorporating DeepSeek elements.
+   https://www.pixiv.net/users/18604994
+3. Small-tailqwq — DeepSeek-element scenes and skin presentation reference.
+   https://github.com/Small-tailqwq/dsh-deep-whale
+4. This conversation's new theme scenes, costumes and interfaces: generated
+   with local MOSS in the first concept round and built-in image_gen thereafter.
+   The 13 bundled background images were generated/edited with built-in
+   image_gen on 2026-11-08. Ten preserve the corresponding existing concept;
+   forest-greenhouse, abyss-opera and neon-konbini are new scenes.
+
+No generated mockup text, fake input widgets or fake sidebars are used as app UI.
+All bundled PNG artwork is covered by the upstream CC BY-NC-SA 4.0 attribution,
+noncommercial and share-alike terms, not by the software's MIT permission.
+Original package NOTICE is included in the complete source distribution.

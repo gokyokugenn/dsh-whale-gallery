@@ -1,0 +1,184 @@
+/* All host decoration is scoped to the active skin. Native menus and dialogs keep their layering. */
+body[data-dsh-whale-gallery] {
+  background: var(--wg-paper) !important;
+  color: var(--wg-ink);
+  --dsw-alias-bg-base: transparent !important;
+  --dsw-alias-bg-layer-1: color-mix(in srgb, var(--wg-surface) 94%, transparent) !important;
+  --dsw-alias-bg-layer-2: var(--wg-surface) !important;
+  --dsw-alias-bg-layer-3: color-mix(in srgb, var(--wg-accent) 8%, var(--wg-surface)) !important;
+  --dsw-alias-bg-module-platform: var(--wg-surface) !important;
+  --dsw-alias-bg-overlay: var(--wg-surface) !important;
+  --dsw-alias-border-l1: color-mix(in srgb, var(--wg-border) 42%, transparent) !important;
+  --dsw-alias-border-l2: var(--wg-border) !important;
+  --dsw-alias-border-l3: var(--wg-accent) !important;
+  --dsw-alias-label-primary: var(--wg-ink) !important;
+  --dsw-alias-label-secondary: var(--wg-ink) !important;
+  --dsw-alias-label-tertiary: var(--wg-muted) !important;
+  --dsw-alias-label-caption: var(--wg-muted) !important;
+  --dsw-alias-brand-primary: var(--wg-accent-solid) !important;
+  --dsw-alias-brand-primary-invert: #fff !important;
+  --dsw-alias-brand-text: var(--wg-accent) !important;
+  /* 宿主的活动标签、焦点环、主按钮底色、开关底色都吃这几颗「业务色」——不接过来就会一直是 DSH 的蓝。 */
+  --dsw-alias-state-business-primary: var(--wg-accent) !important;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, var(--wg-accent) 22%, var(--wg-surface)) !important;
+  --dsw-static-deepseek-500: var(--wg-accent-solid) !important;
+  --dsw-static-deepseek-400: var(--wg-accent) !important;
+  --dsw-static-deepseek-100: color-mix(in srgb, var(--wg-accent) 20%, var(--wg-surface)) !important;
+  --dsw-alias-button-primary-fill: var(--wg-accent-solid) !important;
+  --dsw-alias-button-primary-hover: color-mix(in srgb, var(--wg-accent-solid) 84%, #000) !important;
+  --dsw-alias-button-floating-fill: var(--wg-surface) !important;
+  --dsw-alias-button-floating-hover: color-mix(in srgb, var(--wg-accent) 12%, var(--wg-surface)) !important;
+  --dsw-alias-button-tool-bar-fill: var(--wg-surface) !important;
+  --dsw-alias-button-tool-bar-hover: color-mix(in srgb, var(--wg-accent) 12%, var(--wg-surface)) !important;
+  --dsw-alias-interactive-bg-active: color-mix(in srgb, var(--wg-accent) 17%, var(--wg-surface)) !important;
+  --dsw-alias-interactive-bg-hover: color-mix(in srgb, var(--wg-accent) 9%, var(--wg-surface)) !important;
+  --dsw-alias-interactive-bg-hover-solid: color-mix(in srgb, var(--wg-accent) 9%, var(--wg-surface)) !important;
+  --dsw-specific-input-major: color-mix(in srgb, var(--wg-surface) 94%, transparent) !important;
+  --dsw-specific-menu: var(--wg-surface) !important;
+  --dsw-specific-selector: var(--wg-surface) !important;
+  --dsw-specific-bubble: color-mix(in srgb, var(--wg-accent) 8%, var(--wg-surface)) !important;
+  --dsw-specific-bubble-highlight: color-mix(in srgb, var(--wg-accent) 15%, var(--wg-surface)) !important;
+  --dsw-specific-sidebar-fill: color-mix(in srgb, var(--wg-paper) 95%, transparent) !important;
+  --dsw-specific-sidebar-nav-item-active: color-mix(in srgb, var(--wg-accent) 17%, var(--wg-surface)) !important;
+  --dsw-specific-sidebar-nav-item-active-accent: var(--wg-accent) !important;
+  --dsw-specific-sidebar-nav-item-hover: color-mix(in srgb, var(--wg-accent) 9%, var(--wg-surface)) !important;
+  --dsw-input-solid: var(--wg-surface) !important;
+  --dsw-alias-menu-group-header-fill: var(--wg-surface) !important;
+  /* 代码块：宿主默认拿中性近白当底（#f9fafb），深色主题下主题的 ink 也是近白 → 白字白底看不见。
+     这里让底色跟着 ink 走：浅色主题略微压深，深色主题略微提亮，两种主题都保证正文可读。 */
+  --dsw-alias-markdown-code-block: color-mix(in srgb, var(--wg-ink) 7%, var(--wg-surface)) !important;
+  --dsw-alias-markdown-code-block-banner: color-mix(in srgb, var(--wg-ink) 12%, var(--wg-surface)) !important;
+  --dsw-alias-markdown-inline-code: color-mix(in srgb, var(--wg-ink) 13%, var(--wg-surface)) !important;
+  --dsw-alias-markdown-code-segment-selected: color-mix(in srgb, var(--wg-accent) 22%, var(--wg-surface)) !important;
+  --dsw-alias-markdown-code-segment-unselected: color-mix(in srgb, var(--wg-ink) 8%, var(--wg-surface)) !important;
+  --dsw-alias-markdown-tag: color-mix(in srgb, var(--wg-accent) 18%, var(--wg-surface)) !important;
+  --dsw-alias-markdown-citation: color-mix(in srgb, var(--wg-ink) 10%, var(--wg-surface)) !important;
+  --dsw-alias-markdown-placeholder: var(--wg-muted) !important;
+}
+/* 深色主题里代码高亮还套着宿主的浅色配色（深紫、藏蓝），压在深底上同样吃力，换一套浅色高亮。 */
+body[data-dsh-whale-gallery][data-wg-mode='dark'] {
+  --shiki-token-keyword: #ff9ec4;
+  --shiki-token-string: #a8e6b8;
+  --shiki-token-string-expression: #a8e6b8;
+  --shiki-token-comment: #94a0b8;
+  --shiki-token-function: #cbb8ff;
+  --shiki-token-constant: #8ec9ff;
+  --shiki-token-punctuation: #c9d2e3;
+  --shiki-token-parameter: #ffd39b;
+  --shiki-token-link: #8ec9ff;
+}
+.wg-scene { position: fixed; inset: 0; z-index: 0; pointer-events: none; -webkit-app-region: initial !important; background: var(--wg-art) right bottom / auto var(--wg-art-scale, 100%) no-repeat; opacity: var(--wg-art-opacity, 1); }
+/* 和主题馆缩略图保持同一套纵向构图：按高度铺满、横向靠右裁切，多出来的部分落在侧栏底下。
+   只有超宽屏（≥2.05:1）才退回 cover，免得左边露出一条纸色空带。
+   主题写了 artScale（<100）时整幅按比例缩小、贴住右下角，顶部空出来的地方用下面这条羽化接缝。 */
+.wg-scene::before { content: ''; position: absolute; inset: 0; pointer-events: none; }
+body[data-wg-art-scaled='true'] .wg-scene::before { background: linear-gradient(180deg, var(--wg-paper) 0%, color-mix(in srgb, var(--wg-paper) 52%, transparent) 7%, transparent 16%); }
+@media (min-aspect-ratio: 205/100) { .wg-scene { background-size: cover; } }
+/* 角色画在左边的构图（artFlip）：把整幅镜像过来，让主体回到右侧；遮罩层再镜像一次抵消，阅读色仍留在左边。 */
+body[data-wg-art-flip='true'] .wg-scene { transform: scaleX(-1); }
+body[data-wg-art-flip='true'] .wg-scene::before,
+body[data-wg-art-flip='true'] .wg-scene::after { transform: scaleX(-1); }
+.wg-scene[hidden] { display: none; }
+.wg-scene::after { content: ''; position: absolute; inset: 0; pointer-events: none; }
+body[data-dsh-whale-gallery][data-wg-mode='dark'] .wg-scene::after { background: linear-gradient(90deg, #07132185 0%, #07132173 52%, transparent 82%); }
+body[data-dsh-whale-gallery][data-wg-mode='light'] .wg-scene::after { background: linear-gradient(90deg, color-mix(in srgb, var(--wg-paper) 18%, transparent), transparent 72%); }
+body[data-dsh-whale-gallery][data-wg-mode='light'][data-wg-art-tone='dark'] .wg-scene::after { background: linear-gradient(90deg, color-mix(in srgb, var(--wg-paper) 88%, transparent), color-mix(in srgb, var(--wg-paper) 72%, transparent) 52%, transparent 82%); }
+body[data-dsh-whale-gallery] [id='root'] { position: relative; z-index: 1 !important; background: transparent !important; }
+/* Windows desktop paints the app frame itself with the sidebar fill; that sheet sits above the
+   artwork and hides the whole theme. The sidebar column and the caption strip keep their own fill,
+   so clearing the frame only lets the illustration through the conversation column. */
+html[data-windows-titlebar] body[data-dsh-whale-gallery] [class*='_frame'] { background: transparent !important; }
+/* 主按钮（发送键、创建这类实心按钮）：宿主用业务蓝当底、白字，这里换成主题实色。 */
+body[data-dsh-whale-gallery] button[class*='_primary']:not(:disabled) { background: var(--wg-accent-solid) !important; color: #fff !important; }
+body[data-dsh-whale-gallery] button[class*='_primary']:not(:disabled):hover { background: color-mix(in srgb, var(--wg-accent-solid) 86%, #000) !important; }
+/* 开关：开 = 主题实色底 + 白钮，关 = 灰底 + 白钮，两个状态一眼能分开。 */
+body[data-dsh-whale-gallery] [role='switch'] { background: color-mix(in srgb, var(--wg-muted) 62%, var(--wg-surface)) !important; border: 1px solid color-mix(in srgb, var(--wg-border) 72%, transparent) !important; }
+body[data-dsh-whale-gallery] [role='switch'][aria-checked='true'] { background: var(--wg-accent-solid) !important; border-color: var(--wg-accent-solid) !important; }
+body[data-dsh-whale-gallery] [role='switch'] > span { background: #fff !important; box-shadow: 0 1px 2px rgb(0 0 0 / 26%); }
+body[data-dsh-whale-gallery] [class*='centerCol'] { background: transparent !important; }
+body[data-dsh-whale-gallery] [class*='sidebarCol'] { border-right: 1px solid var(--wg-border); background: color-mix(in srgb, var(--wg-paper) 94%, transparent); }
+body[data-dsh-whale-gallery] [data-slot='sidebar'] button[class*='_newSession'] { background: var(--wg-surface) !important; color: var(--wg-ink) !important; border: 1px solid var(--wg-border) !important; }
+body[data-dsh-whale-gallery] [data-slot='sidebar'] button[class*='_newSession']:hover { background: color-mix(in srgb, var(--wg-accent) 12%, var(--wg-surface)) !important; }
+body[data-dsh-whale-gallery] [data-composer-card] { background: color-mix(in srgb, var(--wg-surface) 96%, transparent) !important; border: 1px solid var(--wg-border) !important; border-radius: var(--wg-radius) !important; box-shadow: 0 12px 36px #10283b24, inset 0 0 0 3px color-mix(in srgb, var(--wg-accent) 7%, transparent); }
+body[data-dsh-whale-gallery] [data-composer-card]:focus-within { border-color: var(--wg-accent) !important; }
+/* Hero: leave the host's own centred composer layout untouched. */
+/* Conversation: the reading wash dissolves early so the illustration is plainly visible;
+   the copy carries a paper halo so it stays legible where it sits on top of it. */
+body[data-dsh-whale-gallery] [data-phase='active'] {
+  background: linear-gradient(90deg,
+    color-mix(in srgb, var(--wg-surface) calc(var(--wg-reading) * 0.74), transparent) 0%,
+    color-mix(in srgb, var(--wg-surface) calc(var(--wg-reading) * 0.58), transparent) 30%,
+    color-mix(in srgb, var(--wg-surface) calc(var(--wg-reading) * 0.32), transparent) 50%,
+    color-mix(in srgb, var(--wg-surface) calc(var(--wg-reading) * 0.11), transparent) 68%,
+    color-mix(in srgb, var(--wg-surface) calc(var(--wg-reading) * 0.02), transparent) 82%,
+    transparent 100%) !important;
+  /* inherited by all conversation copy: keeps glyphs readable where they sit on the illustration */
+  text-shadow:
+    0 0 8px color-mix(in srgb, var(--wg-paper) 96%, transparent),
+    0 0 4px color-mix(in srgb, var(--wg-paper) 88%, transparent),
+    0 1px 1px color-mix(in srgb, var(--wg-paper) 75%, transparent);
+}
+@media (max-width: 1500px) {
+  body[data-dsh-whale-gallery] [data-phase='active'] {
+    background: linear-gradient(90deg,
+      color-mix(in srgb, var(--wg-surface) calc(var(--wg-reading) * 0.8), transparent) 0%,
+      color-mix(in srgb, var(--wg-surface) calc(var(--wg-reading) * 0.6), transparent) 46%,
+      color-mix(in srgb, var(--wg-surface) calc(var(--wg-reading) * 0.34), transparent) 66%,
+      color-mix(in srgb, var(--wg-surface) calc(var(--wg-reading) * 0.1), transparent) 84%,
+      transparent 100%) !important;
+  }
+}
+body[data-dsh-whale-gallery] [data-composer-input] { color: var(--wg-ink) !important; -webkit-text-fill-color: var(--wg-ink) !important; }
+body[data-dsh-whale-gallery] [data-composer-input]::placeholder { color: var(--wg-muted) !important; }
+body[data-dsh-whale-gallery] [data-turn-trigger] { background: var(--wg-surface); border-color: var(--wg-border); border-radius: 10px; }
+body[data-dsh-whale-gallery][data-wg-panel] [data-slot='main'] { background: color-mix(in srgb, var(--wg-surface) var(--wg-reading), transparent); }
+body[data-dsh-whale-gallery] [role='dialog'], body[data-dsh-whale-gallery] [role='menu'], body[data-dsh-whale-gallery] [data-dockkit-host] { --dsw-alias-bg-base: var(--wg-surface) !important; }
+body[data-dsh-whale-gallery][data-wg-motif='brass'] [data-composer-card], body[data-dsh-whale-gallery][data-wg-motif='gothic'] [data-composer-card] { border-width: 2px !important; box-shadow: 0 12px 36px #10283b24, inset 0 0 0 4px color-mix(in srgb, var(--wg-accent) 18%, transparent); }
+body[data-dsh-whale-gallery][data-wg-motif='post'] [data-composer-card] { border-top: 3px dashed var(--wg-accent) !important; }
+body[data-dsh-whale-gallery][data-wg-motif='snow'] [data-composer-card] { border-top: 4px solid #edf8ff !important; }
+body[data-dsh-whale-gallery][data-wg-motif='lattice'] [data-composer-card] { border-radius: 6px !important; outline: 1px solid color-mix(in srgb, var(--wg-border) 45%, transparent); outline-offset: 4px; }
+body[data-dsh-whale-gallery][data-wg-motif='tech'] [data-composer-card], body[data-dsh-whale-gallery][data-wg-motif='neon'] [data-composer-card] { box-shadow: 0 0 0 1px color-mix(in srgb, var(--wg-accent) 45%, transparent), 0 12px 36px #0003; }
+body[data-dsh-whale-gallery][data-wg-motif='pixel'] [data-composer-card] { box-shadow: 4px 4px 0 color-mix(in srgb, var(--wg-accent) 25%, transparent); }
+.wg-shortcut { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 32px; padding: 5px 9px; color: inherit; font: inherit; border: 1px solid transparent; border-radius: 8px; background: transparent; cursor: pointer; }
+.wg-shortcut:hover { background: var(--dsw-alias-interactive-bg-hover, #e8edf5); }
+.wg-shortcut:focus-visible { outline: 2px solid var(--dsw-alias-brand-primary, #4e7770); outline-offset: 2px; }
+.wg-dialog { width: min(1050px, calc(100vw - 40px)); max-height: calc(100dvh - 48px); padding: 0; border: 1px solid var(--dsw-alias-border-l2, #b9c7c1); border-radius: 22px; background: var(--dsw-specific-menu, #f8faf8); color: var(--dsw-alias-label-primary, #253c3c); box-shadow: 0 24px 100px #071a3159; overflow: auto; }
+.wg-dialog::backdrop { background: #07142180; }
+.wg-gallery { color: var(--dsw-alias-label-primary, #253c3c); background: var(--dsw-specific-menu, #f8faf8); font: 14px/1.55 system-ui, sans-serif; padding: 24px; border-radius: 16px; box-sizing: border-box; min-width: 0; }
+.wg-gallery * { box-sizing: border-box; }
+.wg-gallery-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 18px; }
+.wg-eyebrow { margin: 0 0 4px; font-size: 10px; font-weight: 650; letter-spacing: .15em; color: var(--dsw-alias-label-tertiary, #71877e); }
+.wg-gallery h2 { margin: 0; font-size: 25px; font-weight: 650; letter-spacing: -.03em; }
+.wg-subtitle { margin: 6px 0 18px; color: var(--dsw-alias-label-tertiary, #71877e); }
+.wg-close { width: 32px; height: 32px; font-size: 25px; border: 0; border-radius: 50%; color: inherit; background: var(--dsw-alias-bg-layer-3, #e7eee9); cursor: pointer; }
+.wg-current { padding: 10px 14px; margin-bottom: 15px; border-radius: 10px; font-weight: 600; background: var(--dsw-alias-interactive-bg-active, #e1ede4); }
+.wg-controls { display: flex; align-items: center; gap: 13px 22px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid var(--dsw-alias-border-l1, #dbe4de); }
+.wg-controls label { display: inline-flex; gap: 8px; align-items: center; font-size: 12px; }
+.wg-controls input { accent-color: var(--dsw-alias-brand-primary, #4e7770); }
+.wg-controls select { background: var(--dsw-alias-bg-layer-2, #fff); color: inherit; border: 1px solid var(--dsw-alias-border-l2, #bdcdc4); padding: 6px; border-radius: 7px; }
+.wg-range input { width: 84px; }
+.wg-range output { min-width: 33px; font-variant-numeric: tabular-nums; }
+.wg-filterbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 18px 0; }
+.wg-filters { display: flex; gap: 5px; }
+.wg-filters button { background: transparent; color: inherit; border: 0; padding: 6px 11px; font: inherit; border-radius: 999px; cursor: pointer; }
+.wg-filters button[aria-pressed='true'] { background: var(--dsw-alias-interactive-bg-active, #dbeade); }
+.wg-search { width: 200px; max-width: 100%; padding: 8px 12px; border: 1px solid var(--dsw-alias-border-l2, #bdcdc4); border-radius: 999px; background: var(--dsw-alias-bg-layer-2, #fff); color: inherit; font: inherit; }
+.wg-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.wg-card { display: block; width: 100%; text-align: left; padding: 0; margin: 0; border: 1px solid var(--dsw-alias-border-l2, #bdcdc4); border-radius: 12px; background: var(--dsw-alias-bg-layer-2, #fff); color: inherit; overflow: hidden; cursor: pointer; transition: transform 140ms ease, box-shadow 140ms ease; }
+.wg-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px #10283b1a; }
+.wg-card[aria-pressed='true'] { outline: 2px solid var(--dsw-alias-brand-primary, #4e7770); outline-offset: 2px; }
+.wg-card img, .wg-thumb { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: right center; background: #dce7e4; }
+.wg-thumb { background-repeat: no-repeat; background-position: right bottom; }
+.wg-card-copy { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 5px; padding: 11px 12px; }
+.wg-card strong { font-size: 14px; }
+.wg-card small { grid-column: 1 / -1; color: var(--dsw-alias-label-tertiary, #71877e); font-size: 11px; }
+.wg-badge { font-size: 10px; padding: 2px 6px; border-radius: 4px; background: var(--dsw-alias-interactive-bg-active, #e5eee8); }
+.wg-gallery-footer { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 20px; color: var(--dsw-alias-label-tertiary, #71877e); font-size: 11px; }
+.wg-gallery-footer button { color: inherit; border: 1px solid var(--dsw-alias-border-l2, #bdcdc4); border-radius: 7px; background: transparent; padding: 7px 11px; cursor: pointer; }
+.wg-footer-actions { display: flex; gap: 8px; }
+.wg-gallery-footer .wg-done { color: #fff; border-color: transparent; background: var(--dsw-alias-button-primary-fill, #4e7770); min-width: 66px; }
+.wg-gallery button:focus-visible, .wg-gallery input:focus-visible, .wg-gallery select:focus-visible { outline: 2px solid var(--dsw-alias-brand-primary, #4e7770); outline-offset: 3px; }
+.wg-empty { padding: 28px 0; text-align: center; }
+@media (max-width: 900px) { .wg-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .wg-dialog { width: calc(100vw - 16px); max-height: calc(100dvh - 16px); border-radius: 14px; } .wg-gallery { padding: 16px; } .wg-grid { gap: 10px; } .wg-gallery h2 { font-size: 22px; } .wg-search { width: 100%; } .wg-shortcut span { display: none; } .wg-scene { background-position: 78% center; opacity: calc(var(--wg-art-opacity, 1) * .6); } body[data-dsh-whale-gallery] [data-composer-card] { max-width: 100%; } }
+@media (prefers-reduced-motion: reduce) { .wg-card { transition: none; } }

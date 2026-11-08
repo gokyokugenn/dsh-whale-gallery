@@ -1,0 +1,19 @@
+{
+  "id": "whale-gallery",
+  "name": "鲸鱼娘主题馆 · 38 款",
+  "nameEn": "Whale Girl Gallery · 38 themes",
+  "package": "dsh-whale-gallery",
+  "bodyAttr": "data-dsh-whale-gallery",
+  "tagline": "38 套主题：自然、古风、日式、海岸、幻想、城市，在主题馆里即时切换",
+  "accent": "#4e7770",
+  "wiring": {
+    "id": "ui-skin-whale-gallery",
+    "bundleWired": false
+  },
+  "preview": {
+    "light": "preview/default.png",
+    "dark": "preview/dark.png"
+  },
+  "dshCompatibility": ">=0.2.1-rc.2 <0.2.2-0",
+  "order": 20
+}
