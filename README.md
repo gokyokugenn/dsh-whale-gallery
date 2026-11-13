@@ -1,6 +1,6 @@
 # 鲸鱼娘主题馆 · dsh-whale-gallery
 
-给 [DeepSeek Harness](https://github.com/deepseek-ai) 换皮肤的一个插件：**38 套主题**，点一下即时换，包含标题条、正文、输入卡、按钮、开关、代码块的整套配色，也可以自己加主题。
+给 [DeepSeek Harness](https://github.com/deepseek-ai) 换皮肤的一个插件：**46 套主题**，点一下即时换，包含标题条、正文、输入卡、按钮、开关、代码块的整套配色，也可以自己加主题。
 
 角色「大肥鱼」为 DeepSeek 拟人化的鲸鱼娘，衍生自社区同人设定；本仓库的插画与代码授权见文末。
 

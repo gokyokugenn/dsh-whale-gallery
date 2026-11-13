@@ -624,5 +624,176 @@
     "radius": 16,
     "artFlip": true,
     "keywords": "雨巷、纸伞、青石板、紫阳花、夜灯"
+  },
+  {
+    "id": "blue-sea-sailor",
+    "name": "晴海水手",
+    "group": "海岸",
+    "tone": "light",
+    "accent": "#4579B4",
+    "muted": "#57728C",
+    "paper": "#EDF4FC",
+    "ink": "#1E3242",
+    "border": "#C9DAEC",
+    "surface": "#FAFCFF",
+    "darkAccent": "#9CC6EA",
+    "motif": "lattice",
+    "radius": 18,
+    "keywords": [
+      "海风",
+      "白纱裙",
+      "晴空",
+      "海蓝"
+    ],
+    "artFlip": true
+  },
+  {
+    "id": "moonwhite-gauze",
+    "name": "月白纱舞",
+    "group": "古风",
+    "tone": "light",
+    "accent": "#6E7FC6",
+    "muted": "#57728C",
+    "paper": "#EDF4FC",
+    "ink": "#1E3242",
+    "border": "#C9DAEC",
+    "surface": "#FAFCFF",
+    "darkAccent": "#A9B6EE",
+    "motif": "lattice",
+    "radius": 18,
+    "keywords": [
+      "月白",
+      "汉服",
+      "旋身",
+      "纱带"
+    ]
+  },
+  {
+    "id": "glass-hydrangea",
+    "name": "琉璃花房",
+    "group": "自然",
+    "tone": "light",
+    "accent": "#4B67AD",
+    "muted": "#57728C",
+    "paper": "#EDF4FC",
+    "ink": "#1E3242",
+    "border": "#C9DAEC",
+    "surface": "#FAFCFF",
+    "darkAccent": "#9FB3E8",
+    "motif": "lattice",
+    "radius": 18,
+    "keywords": [
+      "花房",
+      "紫阳花",
+      "琉璃",
+      "浇花"
+    ]
+  },
+  {
+    "id": "clear-snow-court",
+    "name": "霁蓝雪庭",
+    "group": "自然",
+    "tone": "light",
+    "accent": "#5A84C4",
+    "muted": "#57728C",
+    "paper": "#EDF4FC",
+    "ink": "#1E3242",
+    "border": "#C9DAEC",
+    "surface": "#FAFCFF",
+    "darkAccent": "#A6C8EE",
+    "motif": "snow",
+    "radius": 18,
+    "keywords": [
+      "雪庭",
+      "接雪",
+      "霁蓝",
+      "梅枝"
+    ],
+    "artFlip": true
+  },
+  {
+    "id": "sea-breeze-sailor",
+    "name": "海风水手",
+    "group": "海岸",
+    "tone": "light",
+    "accent": "#3D74B0",
+    "muted": "#4E6A86",
+    "paper": "#E7EFF8",
+    "ink": "#1B2E40",
+    "border": "#C2D5E8",
+    "surface": "#F6FAFE",
+    "darkAccent": "#96C2E8",
+    "motif": "lattice",
+    "radius": 18,
+    "keywords": [
+      "海风",
+      "水手领",
+      "白丝",
+      "回眸"
+    ]
+  },
+  {
+    "id": "sunlit-booklounge",
+    "name": "晴窗书页",
+    "group": "城市",
+    "tone": "light",
+    "accent": "#4A6699",
+    "muted": "#4E6A86",
+    "paper": "#E7EFF8",
+    "ink": "#1B2E40",
+    "border": "#C2D5E8",
+    "surface": "#F6FAFE",
+    "darkAccent": "#9FB2D6",
+    "motif": "post",
+    "radius": 18,
+    "keywords": [
+      "书页",
+      "窗边",
+      "格纹",
+      "安静"
+    ],
+    "artFlip": true
+  },
+  {
+    "id": "cloud-kite",
+    "name": "云汀放鸢",
+    "group": "古风",
+    "tone": "light",
+    "accent": "#477CB2",
+    "muted": "#4E6A86",
+    "paper": "#E7EFF8",
+    "ink": "#1B2E40",
+    "border": "#C2D5E8",
+    "surface": "#F6FAFE",
+    "darkAccent": "#9AC4E8",
+    "motif": "lattice",
+    "radius": 18,
+    "keywords": [
+      "纸鸢",
+      "河堤",
+      "初春",
+      "汉服"
+    ]
+  },
+  {
+    "id": "iris-lantern",
+    "name": "青庭系灯",
+    "group": "日式",
+    "tone": "light",
+    "accent": "#3F6FA0",
+    "muted": "#4E6A86",
+    "paper": "#E7EFF8",
+    "ink": "#1B2E40",
+    "border": "#C2D5E8",
+    "surface": "#F6FAFE",
+    "darkAccent": "#92BFE4",
+    "motif": "snow",
+    "radius": 18,
+    "keywords": [
+      "青庭",
+      "灯笼",
+      "浴衣",
+      "紫阳花"
+    ]
   }
 ]

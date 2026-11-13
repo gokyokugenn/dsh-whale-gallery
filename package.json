@@ -1,7 +1,7 @@
 {
   "name": "dsh-whale-gallery",
-  "version": "0.1.0",
-  "description": "鲸鱼娘主题馆：38 套可即时切换的 DeepSeek Harness 界面皮肤，附带自建主题的构建与自检脚本。",
+  "version": "0.1.1",
+  "description": "鲸鱼娘主题馆：46 套可即时切换的 DeepSeek Harness 界面皮肤，附带自建主题的构建与自检脚本。",
   "type": "module",
   "main": "lib/index.js",
   "icon": "assets/icon.svg",
