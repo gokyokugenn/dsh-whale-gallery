@@ -22,7 +22,7 @@
     {
       "name": "dsh-whale-gallery",
       "title": "鲸鱼娘主题馆",
-      "description": "46 套可即时切换的 DSH 界面皮肤：主题馆面板、六类分组、背景浓度与阅读底色两个滑块，深色/浅色都适配，支持自己加主题。",
+      "description": "54 套可即时切换的 DSH 界面皮肤：主题馆面板、六类分组、背景浓度与阅读底色两个滑块，深色/浅色都适配，支持自己加主题。",
       "icon": "https://raw.githubusercontent.com/gokyokugenn/dsh-whale-gallery/main/preview/default.png",
       "author": "gokyokugenn",
       "homepage": "https://github.com/gokyokugenn/dsh-whale-gallery",
@@ -84,9 +84,22 @@
           "engines": {
             "dsh": ">=0.2.1-rc.2 <0.2.2-0"
           }
+        },
+        {
+          "version": "0.1.3",
+          "publishTimestamp": 1794585505,
+          "install": {
+            "spec": "https://github.com/gokyokugenn/dsh-whale-gallery/releases/download/v0.1.3/dsh-whale-gallery-0.1.3.tgz"
+          },
+          "source": {
+            "type": "git"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.2 <0.2.2-0"
+          }
         }
       ],
-      "defaultVersion": "0.1.2"
+      "defaultVersion": "0.1.3"
     }
   ]
 }

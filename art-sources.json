@@ -182,5 +182,37 @@
   {
     "id": "iris-lantern",
     "path": "assets/66714bd83d41cdb887fda26ef5d1b35a007c53224b5b0d26080ba55c92f33a58.png"
+  },
+  {
+    "id": "blue-cream-tea",
+    "path": "assets/62674b47826171385208fff68eac3de7ab14db8ec0b66f650cffa8cdee8ed60e.png"
+  },
+  {
+    "id": "blue-stairs-letter",
+    "path": "assets/d8605045fb6b677cf4e84ac3895734a07b981079a601f30733881c8b5fbaf7c9.png"
+  },
+  {
+    "id": "porcelain-drawing",
+    "path": "assets/5acf4a41cd7d3d284a2f85ad3fda64bcf0f02b5cb892771e5e3c2998c6a6c554.png"
+  },
+  {
+    "id": "sky-archery",
+    "path": "assets/7cecdfbb2457424936aa454e24c185ee8e14f209d36f5148a98ef9d10faa75e6.png"
+  },
+  {
+    "id": "apricot-sakura",
+    "path": "assets/925156b4203cfcf4a160850103b391a7820a34ee5959a61eadeaef8df7ec916c.png"
+  },
+  {
+    "id": "jade-bamboo",
+    "path": "assets/724d87d53d967a650c8ac13573e4b5834e2f9e3091dd9cd5568950ad9d819224.png"
+  },
+  {
+    "id": "caramel-autumn",
+    "path": "assets/e42b9066bce05a01d79adbe0b2b813195055af1616de6013e75b54757a1c7299.png"
+  },
+  {
+    "id": "wisteria-origami",
+    "path": "assets/2ed48092510ac82803bc3fe665f5c27a697da2383e39b74c730e589e05e7367e.png"
   }
 ]

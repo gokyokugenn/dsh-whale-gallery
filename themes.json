@@ -795,5 +795,176 @@
       "浴衣",
       "紫阳花"
     ]
+  },
+  {
+    "id": "blue-cream-tea",
+    "name": "晴蓝茶歇",
+    "group": "海岸",
+    "tone": "light",
+    "accent": "#3F6FA8",
+    "muted": "#556E8C",
+    "paper": "#F1F6FC",
+    "ink": "#1B2C40",
+    "border": "#CBD9EA",
+    "surface": "#FBFDFF",
+    "darkAccent": "#9FC2E8",
+    "motif": "lattice",
+    "radius": 18,
+    "keywords": [
+      "湖畔茶歇",
+      "蓝白裙",
+      "及膝袜",
+      "晴空"
+    ],
+    "artFlip": true
+  },
+  {
+    "id": "blue-stairs-letter",
+    "name": "晴阶来信",
+    "group": "城市",
+    "tone": "light",
+    "accent": "#3C6598",
+    "muted": "#536A85",
+    "paper": "#EFF3FA",
+    "ink": "#1A2A3B",
+    "border": "#C8D4E6",
+    "surface": "#FAFCFE",
+    "darkAccent": "#9AB9E0",
+    "motif": "post",
+    "radius": 18,
+    "keywords": [
+      "石阶",
+      "过膝袜",
+      "回眸",
+      "欧陆小城"
+    ]
+  },
+  {
+    "id": "porcelain-drawing",
+    "name": "青花描瓷",
+    "group": "古风",
+    "tone": "light",
+    "accent": "#2F4E8C",
+    "muted": "#54678C",
+    "paper": "#F2F4FA",
+    "ink": "#1A2740",
+    "border": "#CCD5E8",
+    "surface": "#FCFDFF",
+    "darkAccent": "#93A9DC",
+    "motif": "lattice",
+    "radius": 18,
+    "keywords": [
+      "青花瓷",
+      "旗袍",
+      "描瓷",
+      "窗棂"
+    ]
+  },
+  {
+    "id": "sky-archery",
+    "name": "澄空弓道",
+    "group": "日式",
+    "tone": "light",
+    "accent": "#41689E",
+    "muted": "#546F8C",
+    "paper": "#F0F5FB",
+    "ink": "#1B2E42",
+    "border": "#CAD9EC",
+    "surface": "#FBFDFF",
+    "darkAccent": "#9DBFE4",
+    "motif": "brass",
+    "radius": 18,
+    "keywords": [
+      "弓道",
+      "袴",
+      "拉弓",
+      "晴空"
+    ]
+  },
+  {
+    "id": "apricot-sakura",
+    "name": "杏粉春樱",
+    "group": "自然",
+    "tone": "light",
+    "accent": "#C0708A",
+    "muted": "#7B5E55",
+    "paper": "#FBF3EF",
+    "ink": "#3A2A28",
+    "border": "#EBD8CE",
+    "surface": "#FEFAF7",
+    "darkAccent": "#EBB9C6",
+    "motif": "snow",
+    "radius": 18,
+    "keywords": [
+      "春樱",
+      "杏粉",
+      "花篮",
+      "小径"
+    ],
+    "artFlip": true
+  },
+  {
+    "id": "jade-bamboo",
+    "name": "翡翠竹影",
+    "group": "自然",
+    "tone": "light",
+    "accent": "#4C7B57",
+    "muted": "#5B6F56",
+    "paper": "#F2F6EF",
+    "ink": "#263429",
+    "border": "#D6E2CE",
+    "surface": "#FBFDF9",
+    "darkAccent": "#A9C7AE",
+    "motif": "lattice",
+    "radius": 18,
+    "keywords": [
+      "竹林",
+      "翡翠",
+      "纸伞",
+      "雨后"
+    ]
+  },
+  {
+    "id": "caramel-autumn",
+    "name": "焦糖秋日",
+    "group": "城市",
+    "tone": "light",
+    "accent": "#A86440",
+    "muted": "#7D5E49",
+    "paper": "#FAF2E8",
+    "ink": "#3A2A22",
+    "border": "#E8D6C2",
+    "surface": "#FEFAF4",
+    "darkAccent": "#E0AE8C",
+    "motif": "post",
+    "radius": 18,
+    "keywords": [
+      "秋日",
+      "焦糖",
+      "相机",
+      "红枫"
+    ],
+    "artFlip": true
+  },
+  {
+    "id": "wisteria-origami",
+    "name": "紫藤折纸",
+    "group": "日式",
+    "tone": "light",
+    "accent": "#7A5FA8",
+    "muted": "#7A6787",
+    "paper": "#F7F3FA",
+    "ink": "#33283E",
+    "border": "#E2D8EC",
+    "surface": "#FDFBFE",
+    "darkAccent": "#C6B2E4",
+    "motif": "snow",
+    "radius": 18,
+    "keywords": [
+      "紫藤",
+      "折纸",
+      "缘侧",
+      "纸鹤"
+    ]
   }
 ]
