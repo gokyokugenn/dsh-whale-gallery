@@ -71,9 +71,22 @@
           "engines": {
             "dsh": ">=0.2.1-rc.2 <0.2.2-0"
           }
+        },
+        {
+          "version": "0.1.2",
+          "publishTimestamp": 1794573186,
+          "install": {
+            "spec": "https://github.com/gokyokugenn/dsh-whale-gallery/releases/download/v0.1.2/dsh-whale-gallery-0.1.2.tgz"
+          },
+          "source": {
+            "type": "git"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.2 <0.2.2-0"
+          }
         }
       ],
-      "defaultVersion": "0.1.1"
+      "defaultVersion": "0.1.2"
     }
   ]
 }

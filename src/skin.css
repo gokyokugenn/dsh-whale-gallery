@@ -130,6 +130,10 @@ body[data-dsh-whale-gallery] [data-phase='active'] {
 }
 body[data-dsh-whale-gallery] [data-composer-input] { color: var(--wg-ink) !important; -webkit-text-fill-color: var(--wg-ink) !important; }
 body[data-dsh-whale-gallery] [data-composer-input]::placeholder { color: var(--wg-muted) !important; }
+/* The paper halo above is for copy sitting on the illustration; inside the composer card the
+   background is already opaque, so the halo only softens the glyph edges. Kill it there. */
+body[data-dsh-whale-gallery] [data-composer-seat],
+body[data-dsh-whale-gallery] [data-composer-seat] * { text-shadow: none !important; }
 body[data-dsh-whale-gallery] [data-turn-trigger] { background: var(--wg-surface); border-color: var(--wg-border); border-radius: 10px; }
 body[data-dsh-whale-gallery][data-wg-panel] [data-slot='main'] { background: color-mix(in srgb, var(--wg-surface) var(--wg-reading), transparent); }
 body[data-dsh-whale-gallery] [role='dialog'], body[data-dsh-whale-gallery] [role='menu'], body[data-dsh-whale-gallery] [data-dockkit-host] { --dsw-alias-bg-base: var(--wg-surface) !important; }
